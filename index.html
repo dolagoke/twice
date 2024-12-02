@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spring Flowers in Indiana</title>
+</head>
+<body>
+  <header id="header" style="font-size: 200%; text-align: center;"></header>
+  <p style="font-size: 100%;" id="paragraph"></p>
+  <ul id="flowerList">
+    <li>Smooth hydrangea, Tiny white, sweet-scented</li>   
+  </ul>
+
+  <script src="script.js"></script>
+</body>
+<script>
+
+const header = document.getElementById('header');
+header.textContent = 'Spring Flowers in Indiana';
+
+const paragraph = document.getElementById('paragraph');
+paragraph.textContent = 'Springtime in Indiana is unpredictable; it could be sunny, rainy, or snowy. The best approach to prepare for spring is to keep a variety of apparel on hand, as you never know what the weather will bring.';
+
+const flowerList = document.getElementById('flowerList');
+const flowers = ['Daffodil, brilliant yellow rays of sunlight', 'Crocus, purple carpets', 'Iris, multi-coloured spectacle', 'Ninebark, usually purple and yellow in color', 'Serviceberry, commonly known as Amelanchier'];
+
+flowers.forEach(flower => {
+  const listItem = document.createElement('li');
+  listItem.textContent = flower;
+  flowerList.appendChild(listItem);
+});
+
+
+</script>
+
+</html>
